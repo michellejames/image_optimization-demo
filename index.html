@@ -1,0 +1,352 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title> Testing Stage </title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<script src="https://kit.fontawesome.com/14f404d77e.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.css">
+		<link rel="stylesheet" href="dist/css/main.css">
+		
+	</head>
+
+	<body>
+
+		<div class="container">
+			<header>
+
+				<!-- <img src="src/img/first-responders-nyc.jpg" alt="first responder nyc"> -->
+
+				<!-- <img class="header__img"
+					src="src/img/first-responders-nyc@1x.jpg"
+					srcset="src/img/first-responders-nyc@1x.jpg 1x, 
+							src/img/first-responders-nyc@2x.jpg 2x, 
+							src/img/first-responders-nyc@3x.jpg 3x" 
+				> -->
+				<img class="header__img"
+					src="src/img/first-responders-nyc@1x.jpg"
+					srcset="src/img/first-responders-nyc@1x.jpg 376w, 
+							src/img/first-responders-nyc@2x.jpg 750w, 
+							src/img/first-responders-nyc@3x.jpg 1500w"
+					sizes="(min-width: 567px) 100vw, (min-width: 992px) 60vw, 100vw"
+				>
+				<section class="header__info">
+					<h1 class="title">Image Optimization Done Right</h1>
+					<div class="author">
+						<img class="author__image" src="src/img/logo-small.png">
+						<div class="author__content">
+							<h2 class="name">Web Dev 3 Blog</h2>
+							<h3 class="date">21/1/2021</h3>
+						</div>
+					</div>
+				</section>
+			</header>
+
+			<main>
+				<p>
+					Lorem ipsum dolor sit amet, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+
+				<p>
+					Lorem ipsum dolor sit amet, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in <a href="#">reprehenderit</a> in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+
+				<figure class="post-image">
+					<!-- <picture>
+						
+						<img
+							src="src/img/first-responders-cat.jpg"
+							alt="first responder with cat"
+						>
+					</picture> -->
+					<picture>
+						<source 
+							media="(min-width: 992px)"
+							srcset="src/img/first-responders-cat.jpg"
+						>
+						<source 
+							media="(min-width: 576px)"
+							srcset="src/img/first-responders-cat-smaller.jpg"
+						>
+						<img
+							src="src/img/first-responders-cat-smaller.jpg"
+							loading="lazy"
+							alt="first responder with cat"
+						>
+					</picture>
+					
+					<figcaption>
+						<p>Fire Fighter Rescues Cat</p>
+					</figcaption>
+				</figure>
+
+				<p>
+					Lorem ipsum dolor sit amet, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in <a href="#">reprehenderit</a> in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+
+				<p>
+					Lorem ipsum dolor sit amet, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in <a href="#">reprehenderit</a> in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+
+				<figure class="post-image">
+					<!-- <picture>
+						<img
+							src="src/img/first-responders-fire.jpg"
+							alt="first responders with fire"
+						>
+					</picture> -->
+
+					<picture>
+						<source 
+							media="(min-width: 992px)"
+							srcset="src/img/first-responders-fire.jpg"
+						>
+						<source 
+							media="(min-width: 576px)"
+							srcset="src/img/first-responders-fire-smaller.jpg"
+						>
+						<img
+							src="src/img/first-responders-fire-smaller.jpg"
+							loading="lazy"
+							alt="first responders with fire"
+						>
+					</picture>
+					
+					<figcaption>
+						<p>Fire Fighters Fight Fire</p>
+					</figcaption>
+				</figure>
+
+				<p>
+					Lorem ipsum dolor sit amet, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in <a href="#">reprehenderit</a> in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+
+				<p>
+					Lorem ipsum dolor sit amet, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud <a href="#">exercitation ullamco laboris</a> nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+
+				<figure class="post-image">
+					<!-- <img
+						src="src/img/first-responders-nurse.jpg"
+						alt="first responders with fire"
+						loading="lazy"
+					> -->
+					
+					<a 
+						href="http://www.webdevshelly.com"
+						target="_blank"
+						data-href="src/img/first-responders-nurses.jpg" 
+						class="fade-in progressive replace last-img">
+						<img
+							src="src/img/first-responders-nurses-smaller.jpg"
+							class="preview"
+							alt="first responder nurses"
+							loading="lazy"
+						/>
+					</a>
+					
+					<figcaption>
+						<p>Nurses Simply Being Awesome</p>
+					</figcaption>
+				</figure>
+
+				<!-- <img
+					src="src/img/load2.jpg"
+					alt="first responders with fire"
+					loading="lazy"
+				>
+
+				<img
+					src="src/img/load3.jpg"
+					alt="first responders with fire"
+					loading=“lazy”
+				>
+
+				<img
+					src="src/img/load4.jpg"
+					alt="first responders with fire"
+					loading=“lazy” 
+				> -->
+
+				<p>
+					Lorem ipsum dolor sit amet, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+
+				<p>
+					Lorem ipsum dolor sit amet, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in <a href="#">reprehenderit</a> in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+
+			</main>
+
+			<footer>
+				<ul class="social-media-icons">
+					<li>
+						<a class="twitter bgimg progressive replace" href="#"></a>
+					</li>
+					<li>
+						<a class="facebook" href="#"></a>
+					</li>
+					<li>
+						<a class="dribbble" href="#"></a>
+					</li>
+					<li>
+						<a class="pinterest" href="#"></a>
+					</li>
+					<li>
+						<a class="deviantart" href="#"></a>
+					</li>
+				</ul>
+
+				<ul class="social-media-icons--fontawesome">
+					<li>
+						<a class="twitter" href="#">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</li>
+					<li>
+						<a class="facebook" href="#">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+					</li>
+					<li>
+						<a class="dribbble" href="#">
+							<i class="fab fa-dribbble"></i>
+						</a>
+					</li>
+					<li>
+						<a class="pinterest" href="#">
+							<i class="fab fa-pinterest-p"></i>
+						</a>
+					</li>
+					<li>
+						<a class="deviantart" href="#">
+							<i class="fab fa-deviantart"></i>
+						</a>
+					</li>
+				</ul>
+
+				<ul class="social-media-icons--fontawesome-pseudo">
+					<li>
+						<a class="twitter" href="#"></a>
+					</li>
+					<li>
+						<a class="facebook" href="#"></a>
+					</li>
+					<li>
+						<a class="dribbble" href="#"></a>
+					</li>
+					<li>
+						<a class="pinterest" href="#"></a>
+					</li>
+					<li>
+						<a class="deviantart" href="#"></a>
+					</li>
+				</ul>
+			</footer>
+		</div>
+
+
+
+<!-- 
+		<img 
+			src="lawrence-ipsum-1x.jpg"
+			srcset="lawrence-ipsum-1x.jpg 1x,
+					lawrence-ipsum-2x.jpg 2x,
+					lawrence-ipsum-3x.jpg 3x"
+			alt="lawrence ipsum"
+		>
+
+
+		<img 
+			src="lawrence-ipsum-1x.jpg"
+			srcset="lawrence-ipsum-1x.jpg 567w,
+					lawrence-ipsum-2x.jpg 987w,
+					lawrence-ipsum-3x.jpg 1243w"
+			sizes="
+					(min-width: 560px) 50vw,
+					(min-width: 798px) 75vw,
+					(min-width: 960px) calc(100vw - 2em),
+					100vw"
+			alt="lawrence ipsum"
+		>
+
+		<picture>
+			<source 
+				media="(min-width: 960px)"
+				srcset="img/lawrence-ipsum__large.jpg 534w,
+						img/lawrence-ipsum__large2X.jpg 1068w,
+						img/lawrence-ipsum__large3X.jpg 1602w"
+			>
+			<source 
+				media="(min-width: 798px)"
+				srcset="img/lawrence-ipsum__medium.jpg 474w,
+						img/lawrence-ipsum__medium2X.jpg 984w,
+						img/lawrence-ipsum__medium3X.jpg 1422w"
+			> 
+			<source 
+				media="(min-width: 560px)"
+				srcset="img/lawrence-ipsum__small.jpg,
+						img/lawrence-ipsum__small2X.jpg,
+						img/lawrence-ipsum__small3X.jpg"
+			> 
+			<img
+				src="img/lawrence-ipsum__large.jpg"
+				alt="lawrence ipsum"
+			>
+		</picture>
+						 -->
+
+		<script src="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.js"></script>
+		<script src="dist/js/main.js"></script>
+
+	</body>
+
+	
+
+</html>

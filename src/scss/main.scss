@@ -1,0 +1,305 @@
+/* 
+=====================================================
+Project:	
+Developer:		Michelle Graham akak @webDevShelly
+=====================================================
+*/
+
+/* 0. Reset ========================================= */
+
+@use "reset";
+@use "variables";
+@use "mixins";
+
+/* 1. Main Layout =================================== */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	background: variables.$white;
+	color: variables.$blue;
+	font-family: variables.$main-font;
+}
+
+/* 2. Content ====================================== */
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+
+	header {
+		display: flex;
+		flex-direction: column;
+
+		> img {
+			width: 100%;
+			min-height: 200px;
+			// max-height: 300px;
+			object-fit: cover;
+			object-position: bottom;
+		}
+
+		> section {
+			margin: 3rem 1rem;
+			margin-bottom: 0;
+
+			h1 {
+				font-size: 2.5rem;
+				line-height: 3rem;
+				font-weight: 500;
+			}
+
+			.author {
+				display: flex;
+				align-items: center;
+				margin-top: 20px;
+
+				.author__image {
+					max-width: 100px;
+					border-radius: 100%;
+					margin-right: 1rem;
+				}
+
+				.author__content {
+					@extend h1;
+
+					line-height: 2rem;
+
+					h2 {
+						font-size: 2rem;
+						font-weight: 100;
+					}
+
+					h3 {
+						font-size: 1rem;
+						color: variables.$pink;
+					}
+				}
+			}
+		}
+
+		@include mixins.bp-large {
+			flex-direction: row-reverse;
+			align-items: center;
+			justify-content: center;
+			padding: 20px;
+
+			> img {
+				width: 60%;
+				min-height: 400px;
+				border-radius: 20px;
+			}
+
+			> section {
+				width: 40%;
+			}
+		}
+	}
+
+	main {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 auto;
+		padding: 3rem 1rem;
+
+		> p {
+			line-height: 1.5rem;
+			flex-basis: 100%;
+			margin-bottom: 1rem;
+			padding: 0 0.5rem 0 0.5rem;
+
+			@include mixins.bp-large {
+				flex-basis: 50%;
+			}
+
+			a {
+				color: variables.$pink;
+			}
+		}
+
+		figure {
+			position: relative;
+			margin: 30px auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden;
+
+			// picture {
+			// 	width: 100%;
+			// 	display: flex;
+			// 	justify-content: center;
+			// }
+
+			img,
+			a {
+				width: 100%;
+				max-width: 960px;
+
+				@include mixins.bp-large {
+					// width: 50%;
+				}
+			}
+
+			figcaption {
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				padding: 1rem 0;
+				color: variables.$white;
+				background: rgba(0, 0, 0, 0.6);
+				text-align: center;
+
+				@include mixins.bp-large {
+					// width: 50%;
+				}
+			}
+		}
+	}
+
+	footer {
+		.social-media-icons {
+			display: flex;
+			justify-content: center;
+			list-style: none;
+			padding: 1rem 0;
+			background: variables.$blue;
+
+			li {
+				display: flex;
+				margin: 0 0.5rem;
+
+				a {
+					background-image: url("/src/img/social-media-icons.png");
+					background-repeat: no-repeat;
+					width: 58px;
+					height: 62px;
+
+					&.facebook {
+						background-position: -62px 0;
+					}
+
+					&.dribbble {
+						background-position: -125px 0;
+					}
+
+					&.pinterest {
+						background-position: -186px 0;
+					}
+
+					&.deviantart {
+						background-position: -251px 0;
+					}
+				}
+			}
+		}
+
+		.social-media-icons--fontawesome {
+			display: flex;
+			justify-content: center;
+			list-style: none;
+			padding: 1rem 0;
+			background: variables.$blue;
+
+			li {
+				margin: 0 0.5rem;
+
+				a {
+					text-decoration: none;
+
+					i {
+						font-size: 3rem;
+					}
+
+					&.twitter {
+						color: #25aabe;
+					}
+
+					&.facebook {
+						color: #486aa9;
+					}
+
+					&.dribbble {
+						color: #e16590;
+					}
+
+					&.pinterest {
+						color: #ec474b;
+					}
+
+					&.deviantart {
+						color: #54685a;
+					}
+				}
+			}
+		}
+
+		.social-media-icons--fontawesome-pseudo {
+			display: flex;
+			justify-content: center;
+			list-style: none;
+			padding: 1rem 0;
+			background: variables.$blue;
+
+			li {
+				margin: 0 0.5rem;
+				a {
+					font-size: 3rem;
+
+					&::before {
+						display: inline-block;
+						font-style: normal;
+						font-variant: normal;
+						text-rendering: auto;
+						-webkit-font-smoothing: antialiased;
+						font-family: "Font Awesome 5 Brands";
+					}
+
+					&.twitter {
+						color: #25aabe;
+
+						&::before {
+							content: "\f099";
+						}
+					}
+
+					&.facebook {
+						color: #486aa9;
+						&::before {
+							content: "\f39e";
+						}
+					}
+
+					&.dribbble {
+						color: #e16590;
+						&::before {
+							content: "\f17d";
+						}
+					}
+
+					&.pinterest {
+						color: #ec474b;
+						&::before {
+							content: "\f231";
+						}
+					}
+
+					&.deviantart {
+						color: #54685a;
+						&::before {
+							content: "\f1bd";
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,380 @@
+@charset "UTF-8";
+/* 0. Breakpoints ==================================== */
+/* 1. Colors ========================================= */
+/* 2. Fonts  ========================================= */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+.container header > section .author .author__content,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 
+=====================================================
+Project:	
+Developer:		Michelle Graham akak @webDevShelly
+=====================================================
+*/
+/* 0. Reset ========================================= */
+/* 1. Main Layout =================================== */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: #fff;
+  color: #151e46;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+/* 2. Content ====================================== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container header {
+  display: flex;
+  flex-direction: column;
+}
+.container header > img {
+  width: 100%;
+  min-height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+.container header > section {
+  margin: 3rem 1rem;
+  margin-bottom: 0;
+}
+.container header > section h1, .container header > section .author .author__content {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 500;
+}
+.container header > section .author {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.container header > section .author .author__image {
+  max-width: 100px;
+  border-radius: 100%;
+  margin-right: 1rem;
+}
+.container header > section .author .author__content {
+  line-height: 2rem;
+}
+.container header > section .author .author__content h2 {
+  font-size: 2rem;
+  font-weight: 100;
+}
+.container header > section .author .author__content h3 {
+  font-size: 1rem;
+  color: #d31682;
+}
+@media screen and (min-width: 992px) {
+  .container header {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .container header > img {
+    width: 60%;
+    min-height: 400px;
+    border-radius: 20px;
+  }
+  .container header > section {
+    width: 40%;
+  }
+}
+.container main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+.container main > p {
+  line-height: 1.5rem;
+  flex-basis: 100%;
+  margin-bottom: 1rem;
+  padding: 0 0.5rem 0 0.5rem;
+}
+@media screen and (min-width: 992px) {
+  .container main > p {
+    flex-basis: 50%;
+  }
+}
+.container main > p a {
+  color: #d31682;
+}
+.container main figure {
+  position: relative;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.container main figure img,
+.container main figure a {
+  width: 100%;
+  max-width: 960px;
+}
+.container main figure figcaption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 0;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+.container footer .social-media-icons {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 1rem 0;
+  background: #151e46;
+}
+.container footer .social-media-icons li {
+  display: flex;
+  margin: 0 0.5rem;
+}
+.container footer .social-media-icons li a {
+  background-image: url("/src/img/social-media-icons.png");
+  background-repeat: no-repeat;
+  width: 58px;
+  height: 62px;
+}
+.container footer .social-media-icons li a.facebook {
+  background-position: -62px 0;
+}
+.container footer .social-media-icons li a.dribbble {
+  background-position: -125px 0;
+}
+.container footer .social-media-icons li a.pinterest {
+  background-position: -186px 0;
+}
+.container footer .social-media-icons li a.deviantart {
+  background-position: -251px 0;
+}
+.container footer .social-media-icons--fontawesome {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 1rem 0;
+  background: #151e46;
+}
+.container footer .social-media-icons--fontawesome li {
+  margin: 0 0.5rem;
+}
+.container footer .social-media-icons--fontawesome li a {
+  text-decoration: none;
+}
+.container footer .social-media-icons--fontawesome li a i {
+  font-size: 3rem;
+}
+.container footer .social-media-icons--fontawesome li a.twitter {
+  color: #25aabe;
+}
+.container footer .social-media-icons--fontawesome li a.facebook {
+  color: #486aa9;
+}
+.container footer .social-media-icons--fontawesome li a.dribbble {
+  color: #e16590;
+}
+.container footer .social-media-icons--fontawesome li a.pinterest {
+  color: #ec474b;
+}
+.container footer .social-media-icons--fontawesome li a.deviantart {
+  color: #54685a;
+}
+.container footer .social-media-icons--fontawesome-pseudo {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 1rem 0;
+  background: #151e46;
+}
+.container footer .social-media-icons--fontawesome-pseudo li {
+  margin: 0 0.5rem;
+}
+.container footer .social-media-icons--fontawesome-pseudo li a {
+  font-size: 3rem;
+}
+.container footer .social-media-icons--fontawesome-pseudo li a::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Brands";
+}
+.container footer .social-media-icons--fontawesome-pseudo li a.twitter {
+  color: #25aabe;
+}
+.container footer .social-media-icons--fontawesome-pseudo li a.twitter::before {
+  content: "";
+}
+.container footer .social-media-icons--fontawesome-pseudo li a.facebook {
+  color: #486aa9;
+}
+.container footer .social-media-icons--fontawesome-pseudo li a.facebook::before {
+  content: "";
+}
+.container footer .social-media-icons--fontawesome-pseudo li a.dribbble {
+  color: #e16590;
+}
+.container footer .social-media-icons--fontawesome-pseudo li a.dribbble::before {
+  content: "";
+}
+.container footer .social-media-icons--fontawesome-pseudo li a.pinterest {
+  color: #ec474b;
+}
+.container footer .social-media-icons--fontawesome-pseudo li a.pinterest::before {
+  content: "";
+}
+.container footer .social-media-icons--fontawesome-pseudo li a.deviantart {
+  color: #54685a;
+}
+.container footer .social-media-icons--fontawesome-pseudo li a.deviantart::before {
+  content: "";
+}
+/*# sourceMappingURL=main.css.map */
